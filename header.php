@@ -1,7 +1,10 @@
 <?php
 
-// We want the same twentyeleven header on pages that aren't
-// the portfolio post_type
+/* 
+ We want the same twentyeleven header on pages that aren't
+ the sd_portfolio post_type.
+ This is hacky and not recommended for most situations.
+*/
 
 $is_portfolio_archive = is_post_type_archive(SD_PORTFOLIO_POST_TYPE);
 $is_single_portfolio = is_singular(SD_PORTFOLIO_POST_TYPE);

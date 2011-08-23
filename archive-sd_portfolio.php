@@ -3,6 +3,14 @@
 <div class="flexslider">
 	<ul class="slides">
 	<?php // start loop
+	/*
+	query_posts(array(
+		'post_type' => 'sd_portfolio',
+		'posts_per_page' => -1,
+		'order' => 'DESC',
+		'orderby' => 'title'
+	));
+	*/
 	while( have_posts() ) : the_post(); ?>
 
 	<li <?php post_class() ?>>
@@ -18,7 +26,9 @@
 	</li>
 
 	<?php	//end loop
-	endwhile;	?>
+	endwhile;
+	# wp_reset_query();
+		?>
 	</ul>
 </div>
 </div>
