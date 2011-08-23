@@ -1,0 +1,92 @@
+/*
+Theme Name: My Portfolio
+Author: Matt Wiebe
+Author URI: http://somadesign.ca/
+Description: Display a Responsive Portfolio inside Twenty Eleven
+License: GPL v2
+Template: twentyeleven
+*/
+
+@import url(../twentyeleven/style.css);
+
+.image-block {
+	max-width:1000px;
+}
+.single-sd_portfolio .hentry {
+	padding-top:0;
+}
+.portfolio-title {
+	font-weight: normal;
+	letter-spacing: .05em;
+	margin: 0 .5em;
+	text-transform: uppercase;
+}
+.portfolio-img {
+	max-width:100%;
+	height:auto;
+	display:block;
+}
+.portfolio-meta {
+	overflow:hidden;
+	padding:1em 0 0;
+	background-color:#111;
+	color:#ddd;
+	line-height:1.4;
+}
+.portfolio-meta dl {
+	float:left;
+	width:26.9%;
+	margin:0 3%;
+}
+.portfolio-meta dt {
+	border-bottom:1px solid #444;
+	margin-bottom:.333em;
+}
+
+/* Portfolio Archive */
+.post-type-archive-sd_portfolio .hentry {
+	border-bottom:0 none;
+}
+.post-type-archive-sd_portfolio #main {
+	padding-bottom:1.625em;
+}
+.post-type-archive-sd_portfolio .flexslider h1 {
+	background-color:rgba(0,0,0,.5);
+	color:#eee;
+	position:absolute;
+	bottom:0;
+	left:0;
+	padding:0;
+	margin:0;
+	text-indent:1em;
+	width:100%;
+	
+}
+
+/* Respond! */
+/* iPad Portrait-ish (slightly beforehand) */
+@media only screen and (max-width: 800px) {
+	.portfolio-meta dl {
+		width:43.9%;
+	}
+	.portfolio-meta .client-quote {
+		float:none;
+		width:auto;
+	}
+	.single-sd_portfolio .entry-content {
+		width:auto;
+		margin:0 2em;
+	}
+}
+/* iPhone Portrait and smaller */
+@media only screen and (max-width:480px) {
+	.portfolio-meta dl {
+		float:none;
+		width:auto;
+		margin:0 1em;
+	}
+	.single-sd_portfolio .entry-content {
+		width:auto;
+		margin:0 1em;
+	}
+}
